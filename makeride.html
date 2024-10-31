@@ -1,0 +1,423 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MakeRide</title>
+</head>
+<style>
+    body {
+        margin: 0 ;
+        padding: 0;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url("C:/Users/jayadeepravipati/Desktop/pro/images/1000_F_890909206_UIqhVmjP1vRuH2lsj57XapeR0598zBn5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: rgb(251, 253, 254);
+        /* font-size: 2vw; */
+    }
+    h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #a, #b, #c {
+        height: 4vh;
+        width: 30vh;
+        margin: 5px 0; 
+    }
+    #c {
+        background-color: rgb(25, 228, 243);
+        width: 20vh;
+    }
+    input[type="radio"] {
+        margin: 0 15px;
+        height: 3vh;
+        width: 3vh;
+    }
+    select {
+        height: 4vh;
+        width: 8vh;
+        margin: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>MAKE RIDE</h1>
+        <div class="f">
+        <form>
+            <label> FROM :</label> <input id="a" type="text" placeholder="From"><br><br>
+            <lable>TO :</lable><input id="b" type="text" placeholder="To"><br><br>
+            Vehicle:
+            <input type="radio" name="options" value="Car">CAR
+            <input type="radio" name="options" value="Bike">BIKE<br><br>
+            <label for="personSelect">Persons:</label>
+            <select id="personSelect" name="persons">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <label for="luggageSelect">Luggage:</label>
+            <select id="luggageSelect" name="luggage">
+                <option value="0">0kg</option>
+                <option value="1">1kg</option>
+                <option value="2">2kg</option>
+                <option value="3">3kg</option>
+                <option value="4">4kg</option>
+                <option value="5">5kg</option>
+            </select>
+            <label for="bothSelect">Both:</label>
+            <select id="bothSelect" name="both">
+                <option value="None">None</option>
+                <option value="Both">Both</option>
+            </select><br><br>
+            <input id="c" type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MakeRide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        label{
+            font-size: 1.6em;
+
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-image: url("C:/Users/jayadeepravipati/Desktop/pro/images/1000_F_890909206_UIqhVmjP1vRuH2lsj57XapeR0598zBn5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fbfdfd;
+            text-align: center;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 2em;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 40vw;
+            /* width: 40vw; */
+            height: 60vh;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 1em;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+        }
+
+        input[type="radio"] {
+            margin: 5em 2em;
+            padding: 5px;
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        select {
+            padding: 1em;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            margin: 2em 2em;
+        }
+
+        #c {margin-top: 5vh;
+            background-color: #19e4f3;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            color: #000;
+            width:20%;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            form {
+                max-width: 80%;
+                height: 50vh;
+                /* padding: 15px; */
+            }
+
+            input[type="text"], select, #c {
+                font-size: 0.9em;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>MAKE RIDE</h1>
+            <form>
+                <label>FROM:</label>
+                <input id="a" type="text" placeholder="From"><br>
+                <label>TO:</label>
+                <input id="b" type="text" placeholder="To"><br>
+               <label> Vehicle:</label>
+                <input type="radio" name="options" value="Car"><label>CAR</label>
+                <input type="radio" name="options" value="Bike"><label>BIKE</label><br>
+                <label for="personSelect">Persons:</label>
+                <select id="personSelect" name="persons">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <label for="luggageSelect">Luggage:</label>
+                <select id="luggageSelect" name="luggage">
+                    <option value="0">0kg</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="4">4kg</option>
+                    <option value="5">5kg</option>
+                </select>
+                <label for="bothSelect">Both:</label>
+                <select id="bothSelect" name="both">
+                    <option value="None">None</option>
+                    <option value="Both">Both</option>
+                </select><br>
+                <input id="c" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MakeRide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        
+        label {
+            font-size: 1.4em;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-image: url("C:/Users/jayadeepravipati/Desktop/pro/images/1000_F_890909206_UIqhVmjP1vRuH2lsj57XapeR0598zBn5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fbfdfd;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 0 ;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 80px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        input[type="text"], select, input[type="radio"] + label {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            /* display: block; */
+            /* text-align: left; */
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            width: 1.5em;
+            height: 1.5em;
+        }
+
+        .radio-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+        input[type="radio"] + label {
+            display: inline-block;
+            width: auto;
+            text-align: left;
+            margin: 0;
+        }
+
+        #c {
+            margin-top: 20px;
+            background-color: #19e4f3;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            color: #000;
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            form {
+                padding: 20px;
+            }
+
+            label {
+                font-size: 1.2em;
+            }
+
+            input[type="text"], select, #c {
+                font-size: 0.9em;
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            form {
+                padding: 15px;
+            }
+
+            label {
+                font-size: 1em;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>MAKE RIDE</h1>
+            <form>
+                <label>FROM:</label>
+                <input id="a" type="text" placeholder="From">
+                <label>TO:</label>
+                <input id="b" type="text" placeholder="To">
+                <div class="radio-container">
+                    <input type="radio" name="options" value="Car" id="car">
+                    <label for="car">CAR</label>
+                    <input type="radio" name="options" value="Bike" id="bike">
+                    <label for="bike">BIKE</label>
+                </div>
+                <label for="personSelect">Persons:</label>
+                <select id="personSelect" name="persons">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <label for="luggageSelect">Luggage:</label>
+                <select id="luggageSelect" name="luggage">
+                    <option value="0">0kg</option>
+                    <option value="1">1kg</option>
+                    <option value="2">2kg</option>
+                    <option value="3">3kg</option>
+                    <option value="4">4kg</option>
+                    <option value="5">5kg</option>
+                </select>
+                <label for="bothSelect">Both:</label>
+                <select id="bothSelect" name="both">
+                    <option value="None">None</option>
+                    <option value="Both">Both</option>
+                </select>
+                <input id="c" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

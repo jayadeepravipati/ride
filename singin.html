@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+    <style>
+        body {
+            background-color: #090909;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .topbar {
+            text-decoration: none;
+            color: rgb(2, 7, 7);
+            text-align: center;
+            background-color: rgba(224, 105, 131, 0.642);
+            padding: 10px 0;
+            font-size: 1vw;
+        }
+        .signin-container {
+            background: white;
+            height: auto;
+            width: 30%;
+            margin: 7vh auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin: 0 50px 0 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 4px;
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .forgot-password {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            color: rgb(45, 168, 168);
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <div class="topbar">
+        <h1>RIDE SHARE</h1>
+    </div>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 12345-67890" pattern="\d{5}\d{5}" maxlength="10" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" minlength="8" maxlength="15" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}" required>
+                <small>Must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.</small><br><br>
+            </div>
+            <button onclick="location.href='project.html'">SUBMIT</button><br><br>
+            <a href="recover.html" class="forgot-password" >Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0606;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: -2.8vh;
+        }
+        .topbar{
+            background-color:  rgb(189, 22, 78);
+            margin: 0;
+        }
+        .container {
+            background: white;
+            margin: 0 0 0 40%;
+            padding: 20px;
+            border-radius: 30px;
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #695454;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <h1>RIDE SHARE</h1>
+    </div>
+    <div class="container">
+        <h2>Recover Password</h2>
+        <p>Please enter your email address. We will send you password to your email.</p>
+        <form action="/recover-password" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Send Recovery Link">
+        </form>
+    </div>
+</body>
+</html>
